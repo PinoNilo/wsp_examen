@@ -124,19 +124,6 @@ body {
 				height: 573px;
 				overflow-x: hidden;
 				overflow-y: scroll;
-				.mybubble {
-					text-align: right;
-					background-color: #DCF7C5;
-					width: auto; 1
-					border-radius: 6px;
-					padding: 0.1% 1% 0%;
-					margin-bottom: 5px;
-					float: right;
-					max-width: 500px;
-					h5 {
-						width: auto;
-  						word-wrap: break-word;
-					}
 				}
 				.bubble {
 					border-radius: 6px;
@@ -187,4 +174,3 @@ body {
 			}
 		}
 	}
-}
