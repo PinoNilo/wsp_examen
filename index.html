@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Whatsapp Web</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRoboto:300,400,500" media="all">
+    <!-- Vincula los CSS que faltan -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/icomoon.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/queries.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="owner">
+              <div class="profile-pic">
+                <img src="image/gian.jpg">
+              </div>
+              <span class="icon-message"></span>
+              <span class="icon-dots-three-vertical owner-dots"></span>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="conversation">
+              <div class="conversation-contact"></div>
+              <span class="icon-attachment"></span>
+              <span class="icon-dots-three-vertical convo-dots"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="col-md-12 chat-nuevo">
+              <span class="icon-search"></span>
+              <input type="text" id="buscarContacto" placeholder="Buscar o empezar un chat nuevo"></input>
+            </div>
+            <ul class="col-md-12 contacts"></ul>
+          </div>
+          <div class="col-md-8 mensajes-section">
+            <div class="col-md-12 convo-section"></div>
+            <div class="col-md-12 typing-section">
+              <span class="icon-insert_emoticon"></span>
+              <input id="mensajeNuevo" type="text" placeholder="Escribe tu mensaje aquí">
+              <span class="icon-mic"></span>
+            </div>
+          </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.cssemoticons.min.js"></script>
+  </body>
+</html>
