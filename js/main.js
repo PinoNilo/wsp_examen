@@ -12,7 +12,6 @@ function templateMensaje(mensaje, tipo) {
     '</div>' +
   '</div>';
 };
-
 function mostrar(item) {
   var id = $(item).parent().attr('id');
   $('.convo-section').html('');
