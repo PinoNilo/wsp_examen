@@ -23,7 +23,7 @@ function mostrar(item) {
         $('.convo-section').append(mensajeItem);
       });
       $('.conversation-contact').html('<div class="profile-pic">'+
-        '<img src="' + contacto.avatar + '"></div>' + 
+        '<img src="' + contacto.avatar + '"></div>' +
         '<h4>' + contacto.nombre + '</h4>');
     }
   });
@@ -64,14 +64,31 @@ function obtenerHora() {
 }
 
 $(document).on('ready', function() {
+    var allMensaje = [];
 
-  llenarListaContactos();
+    if(localStorage.getItem("mensajes")){
+        var allMensaje = localStorage.getItem("mensajes").split(',');
 
-  $('#mensajeNuevo').on('keypress', function(event) {
+        $.each(allMensaje, function(index, contacto) {
+            var mensaje = templateMensaje({
+              texto : contacto,
+              hora : obtenerHora()
+            }, 'mybubble');
+            $('.convo-section').append(mensaje);
+        });
+    }
+
+    var mensajes = allMensaje;
+    
+    llenarListaContactos();
+
+    $('#mensajeNuevo').on('keypress', function(event) {
     if (event.keyCode === 13) {
       var textoMensaje = $('#mensajeNuevo').val();
 
       if (textoMensaje != '') {
+        mensajes.push(textoMensaje);
+        localStorage.setItem("mensajes",mensajes);
         var mensaje = templateMensaje({
           texto : textoMensaje,
           hora : obtenerHora()
@@ -80,20 +97,20 @@ $(document).on('ready', function() {
         $('#mensajeNuevo').val('');
       }
     }
-  });
-
-  $('#buscarContacto').on('keyup', function(event) {
-    var valorBuscado = $('#buscarContacto').val();
-
-    $.each(data, function(index, contacto) {
-      if ((contacto.nombre).search(valorBuscado) !== -1) {
-        var contactoItem = templateContacto(contacto);
-        $('.contacts').html(contactoItem);
-      }
     });
 
-    if(event.keyCode === 8 && $(this).val() === '') {
-      llenarListaContactos();
-    }
-  });
+    $('#buscarContacto').on('keyup', function(event) {
+        var valorBuscado = $('#buscarContacto').val();
+
+        $.each(data, function(index, contacto) {
+                if ((contacto.nombre).search(valorBuscado) !== -1) {
+                    var contactoItem = templateContacto(contacto);
+                    $('.contacts').html(contactoItem);
+                }
+            });
+
+            if(event.keyCode === 8 && $(this).val() === '') {
+            llenarListaContactos();
+        }
+    });
 });
