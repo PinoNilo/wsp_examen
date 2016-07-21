@@ -4,21 +4,17 @@ body {
 		padding: 3%;
 		height: 130px;
 		background-color: #009688;
-		.col-md-4 {
-			margin: 0;
-			padding: 0;
-		}
-		.col-md-8 {
-			margin: 0;
-			padding: 0;
-		}
 		.owner {
 			background-color: #EEEEEE;
-			padding: 10.5px 20px;
+			padding: 11.5px 20px;
 			img {
 				width: 40px;
 				height: 40px;
 				border-radius: 50px;
+			}
+			span {
+				color: #77767A;
+				font-size: 21px;
 			}
 			.icon-message {
 				float: right;
@@ -28,10 +24,6 @@ body {
 			.owner-dots {
 			  float: right;
 			  margin-top: -10%;
-			}
-			span {
-				color: #77767A;
-				font-size: 21px;
 			}
 		}
 		.conversation {
@@ -43,15 +35,7 @@ body {
   				h4 {
   					margin-bottom: 0;
   				}
-  				.icon-attachment {
-  					float: right;
-  					margin-top: -10px;
-  				}
-  				.convo-dots {
-					float: right;
-					margin-right: 10px;
-					margin-top: -10px;
-				}
+			}
 			h4 {
 				margin-left: 7%;
 			  	margin-top: -5%;
@@ -63,12 +47,26 @@ body {
 				font-size: 13px;
 				margin-bottom: 0.5%;
 			}
+			span {
+				color: #77767A;
+				font-size: 21px;
+			}
+			.convo-dots {
+				float: right;
+				margin-right: 10px;
+				margin-top: 0;
+			}
+			.icon-attachment {
+				float: right;
+				margin-top: 0;
+  			}
 		}
 		.chat-nuevo {
 			position: relative;
 			padding: 4%;
 			border-bottom: 2px solid #F5F5F5;
 			background-color: white;
+
 			span {
 				position: absolute;
 				top: 39%;
@@ -87,8 +85,8 @@ body {
 			background-color: white;
 			border-bottom: 2px solid #F5F5F5;
 			min-height: 500px;
-			overflow-x: scroll;
-			overflow-y: hidden;
+			overflow-y: scroll;
+			overflow-x: hidden;
 			list-style: none;
 			margin: 0;
 			padding: 0;
@@ -128,15 +126,12 @@ body {
 		}
 		.mensajes-section {
 			position: relative;
-<<<<<<< HEAD
 			.bubble {
 				border-radius: 6px;
 				margin-bottom: 5px;
 				background-color: white;
 				padding: 1px 10px;
 			}
-=======
->>>>>>> f824de592bd5a5de06b8f542589391aa8dbd069d
 			.convo-section {
 				padding: 5px 10px 60px 0;
 				background-color: #EDEAE5;
@@ -153,9 +148,9 @@ body {
 					margin-bottom: 5px;
 					float: right;
 					max-width: 500px;
-					word-wrap: break-word;
-					h5 {
+					.mybubble h5 {
 						width: auto;
+						word-wrap: break-word;
 					}
 				}
 			}
@@ -166,19 +161,34 @@ body {
 			background-color: #F1F0EE;
 			position: absolute;
 			bottom: 0;
-				span {
-					color: #A9A9AA;
-					font-size: 23px;
-					margin: 1%;
+			span {
+				color: #A9A9AA;
+				font-size: 23px;
+				margin: 1%;
+			}
+			input {
+				width: 88%;
+				padding: 1%;
+				border-radius: 4px;
+				border-style: none;
+				.celeste {
+					color: #5AB1D6;
 				}
-				input {
-					width: 88%;
-					padding: 1%;
-					border-radius: 4px;
-					border-style: none;
+				.morado {
+					color: #9E155F;
+				}
+				.verde {
+					color: #45B48A;
+				}
+				.amarillo {
+					color: #C79B18;
 				}
 			}
 		}
+		}
 	}
 }
+.col-md-4, .col-md-8 {
+	margin: 0;
+	padding: 0;
 }
