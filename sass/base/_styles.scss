@@ -4,6 +4,14 @@ body {
 		padding: 3%;
 		height: 130px;
 		background-color: #009688;
+		.col-md-4 {
+			margin: 0;
+			padding: 0;
+		}
+		.col-md-8 {
+			margin: 0;
+			padding: 0;
+		}
 		.owner {
 			background-color: #EEEEEE;
 			padding: 10.5px 20px;
@@ -21,6 +29,10 @@ body {
 			  float: right;
 			  margin-top: -10%;
 			}
+			span {
+				color: #77767A;
+				font-size: 21px;
+			}
 		}
 		.conversation {
 			background-color: #EEEEEE;
@@ -35,7 +47,11 @@ body {
   					float: right;
   					margin-top: -10px;
   				}
-			}
+  				.convo-dots {
+					float: right;
+					margin-right: 10px;
+					margin-top: -10px;
+				}
 			h4 {
 				margin-left: 7%;
 			  	margin-top: -5%;
@@ -46,11 +62,6 @@ body {
 				margin-top: -1%;
 				font-size: 13px;
 				margin-bottom: 0.5%;
-			}
-			.convo-dots {
-				float: right;
-				margin-right: 10px;
-				margin-top: -10px;
 			}
 		}
 		.chat-nuevo {
@@ -139,9 +150,9 @@ body {
 					margin-bottom: 5px;
 					float: right;
 					max-width: 500px;
-					.mybubble h5 {
+					word-wrap: break-word;
+					h5 {
 						width: auto;
-						word-wrap: break-word;
 					}
 				}
 			}
@@ -152,34 +163,19 @@ body {
 			background-color: #F1F0EE;
 			position: absolute;
 			bottom: 0;
-			span {
-				color: #A9A9AA;
-				font-size: 23px;
-				margin: 1%;
-			}
-			input {
-				width: 88%;
-				padding: 1%;
-				border-radius: 4px;
-				border-style: none;
-				.celeste {
-					color: #5AB1D6;
+				span {
+					color: #A9A9AA;
+					font-size: 23px;
+					margin: 1%;
 				}
-				.morado {
-					color: #9E155F;
-				}
-				.verde {
-					color: #45B48A;
-				}
-				.amarillo {
-					color: #C79B18;
+				input {
+					width: 88%;
+					padding: 1%;
+					border-radius: 4px;
+					border-style: none;
 				}
 			}
-		}
 		}
 	}
 }
-.col-md-4, .col-md-8 {
-	margin: 0;
-	padding: 0;
 }
