@@ -114,3 +114,10 @@ $(document).on('ready', function() {
         }
     });
 });
+
+    if(event.keyCode === 8 && $(this).val() === '') {
+      llenarListaContactos();
+    }
+  });
+});
+
