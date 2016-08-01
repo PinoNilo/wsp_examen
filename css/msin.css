@@ -1,0 +1,149 @@
+body {
+  background-color: #DFDFDF; }
+  body header {
+    padding: 3%;
+    height: 130px;
+    background-color: #009688; }
+    body header .col-md-4 {
+      margin: 0;
+      padding: 0; }
+    body header .col-md-8 {
+      margin: 0;
+      padding: 0; }
+    body header .owner {
+      background-color: #EEEEEE;
+      padding: 10.5px 20px; }
+      body header .owner img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px; }
+      body header .owner .icon-message {
+        float: right;
+        margin-right: 15%;
+        margin-top: -10%; }
+      body header .owner .owner-dots {
+        float: right;
+        margin-top: -10%; }
+      body header .owner span {
+        color: #77767A;
+        font-size: 21px; }
+    body header .conversation {
+      background-color: #EEEEEE;
+      padding: 5px 10px 0 0;
+      height: 63px; }
+      body header .conversation .conversation-contact {
+        margin-top: 10px; }
+        body header .conversation .conversation-contact h4 {
+          margin-bottom: 0; }
+        body header .conversation .conversation-contact .icon-attachment {
+          float: right;
+          margin-top: -10px; }
+        body header .conversation .conversation-contact .convo-dots {
+          float: right;
+          margin-right: 10px;
+          margin-top: -10px; }
+        body header .conversation .conversation-contact h4 {
+          margin-left: 7%;
+          margin-top: -5%;
+          font-size: 18px; }
+        body header .conversation .conversation-contact h5 {
+          margin-left: 7%;
+          margin-top: -1%;
+          font-size: 13px;
+          margin-bottom: 0.5%; }
+      body header .conversation .chat-nuevo {
+        position: relative;
+        padding: 4%;
+        border-bottom: 2px solid #F5F5F5;
+        background-color: white; }
+        body header .conversation .chat-nuevo span {
+          position: absolute;
+          top: 39%;
+          left: 8%;
+          font-size: 16px; }
+        body header .conversation .chat-nuevo input {
+          padding: 10px 20px 10px 35px;
+          border-radius: 5px;
+          border-style: none;
+          width: 100%;
+          border: 2px solid #F5F5F5; }
+      body header .conversation .contacts {
+        background-color: white;
+        border-bottom: 2px solid #F5F5F5;
+        min-height: 500px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        body header .conversation .contacts h4 {
+          font-size: 15px;
+          margin-left: 13%;
+          margin-top: -10%;
+          color: black; }
+          body header .conversation .contacts h4 .profile-hora {
+            float: right;
+            font-size: 12px;
+            margin-right: 5%;
+            color: gray; }
+        body header .conversation .contacts img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50px; }
+        body header .conversation .contacts h5 {
+          font-size: 12px;
+          color: gray;
+          margin-left: 13%;
+          margin-top: -1%;
+          margin-bottom: 1%; }
+        body header .conversation .contacts li a {
+          display: block;
+          padding: 10px;
+          text-decoration: none; }
+          body header .conversation .contacts li ahover {
+            background-color: #F5F5F5;
+            text-decoration: none; }
+      body header .conversation .mensajes-section {
+        position: relative; }
+        body header .conversation .mensajes-section .bubble {
+          border-radius: 6px;
+          margin-bottom: 5px;
+          background-color: white;
+          padding: 1px 10px; }
+        body header .conversation .mensajes-section .convo-section {
+          padding: 5px 10px 60px 0;
+          background-color: #EDEAE5;
+          background-image: url("../image/chat-panel-bg.png");
+          height: 573px;
+          overflow-x: hidden;
+          overflow-y: scroll; }
+          body header .conversation .mensajes-section .convo-section .mybubble {
+            text-align: right;
+            background-color: #DCF7C5;
+            width: auto;
+            border-radius: 6px;
+            padding: 0.1% 1% 0%;
+            margin-bottom: 5px;
+            float: right;
+            max-width: 500px;
+            word-wrap: break-word; }
+            body header .conversation .mensajes-section .convo-section .mybubble h5 {
+              width: auto; }
+        body header .conversation .mensajes-section .typing-section {
+          padding: 0.7%;
+          border: 1px solid #F1F0EE;
+          width: 100%;
+          background-color: #F1F0EE;
+          position: absolute;
+          bottom: 0; }
+          body header .conversation .mensajes-section .typing-section span {
+            color: #A9A9AA;
+            font-size: 23px;
+            margin: 1%; }
+          body header .conversation .mensajes-section .typing-section input {
+            width: 88%;
+            padding: 1%;
+            border-radius: 4px;
+            border-style: none; }
+
+/*# sourceMappingURL=msin.css.map */

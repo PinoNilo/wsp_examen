@@ -6,11 +6,15 @@ body {
 		background-color: #009688;
 		.owner {
 			background-color: #EEEEEE;
-			padding: 10.5px 20px;
+			padding: 11.5px 20px;
 			img {
 				width: 40px;
 				height: 40px;
 				border-radius: 50px;
+			}
+			span {
+				color: #77767A;
+				font-size: 21px;
 			}
 			.icon-message {
 				float: right;
@@ -31,10 +35,6 @@ body {
   				h4 {
   					margin-bottom: 0;
   				}
-  				.icon-attachment {
-  					float: right;
-  					margin-top: -10px;
-  				}
 			}
 			h4 {
 				margin-left: 7%;
@@ -47,17 +47,26 @@ body {
 				font-size: 13px;
 				margin-bottom: 0.5%;
 			}
+			span {
+				color: #77767A;
+				font-size: 21px;
+			}
 			.convo-dots {
 				float: right;
 				margin-right: 10px;
-				margin-top: -10px;
+				margin-top: 0;
 			}
+			.icon-attachment {
+				float: right;
+				margin-top: 0;
+  			}
 		}
 		.chat-nuevo {
 			position: relative;
 			padding: 4%;
 			border-bottom: 2px solid #F5F5F5;
 			background-color: white;
+
 			span {
 				position: absolute;
 				top: 39%;
@@ -76,8 +85,8 @@ body {
 			background-color: white;
 			border-bottom: 2px solid #F5F5F5;
 			min-height: 500px;
-			overflow-x: scroll;
-			overflow-y: hidden;
+			overflow-y: scroll;
+			overflow-x: hidden;
 			list-style: none;
 			margin: 0;
 			padding: 0;
